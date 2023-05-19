@@ -1,0 +1,22 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /im_server
+spring:
+  datasource:
+    username: root
+    password: Zhoudf,,368878
+    url: jdbc:mysql://localhost:3306/testing?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  # 搜索指定包别名
+  typeAliasesPackage: com.zhoudafeng.im.pojo
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapperLocations: classpath:Mapper/*Mapper.xml
+
+
+
+
+
