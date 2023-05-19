@@ -9,10 +9,10 @@ import java.util.List;
 public interface BaseMapper<T> {
     /**
      * 保存接口
-     * @param t
+     * @param object
      * @return
      */
-    Integer save(T t);
+    Integer save(T object);
 
     /**
      * 查询接口，返回一个泛型类list
@@ -29,10 +29,10 @@ public interface BaseMapper<T> {
 
     /**
      * 修改接口
-     * @param t
+     * @param object
      * @return
      */
-    Integer update(T t);
+    Integer update(T object);
 
     /**
      * 根据唯一键查询数据
@@ -59,8 +59,8 @@ public interface BaseMapper<T> {
 
     /**
      * 带参数查询数据总数
-     * @param t
+     * @param object
      * @return
      */
-    Integer total(T t);
+    Integer total(T object);
 }
