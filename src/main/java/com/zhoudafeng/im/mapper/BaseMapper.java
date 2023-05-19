@@ -1,5 +1,8 @@
 package com.zhoudafeng.im.mapper;
 
+import com.zhoudafeng.im.pojo.vo.LoginToken;
+import com.zhoudafeng.im.utils.ApiResult;
+
 import java.util.List;
 
 /***
@@ -13,10 +16,11 @@ public interface BaseMapper<T> {
      * @param object
      * @return
      */
-    Integer save(T object);
+    ApiResult<T> save(T object);
 
     /**
      * 查询接口，返回一个泛型类list
+     *
      * @return
      */
     List<T> query();
