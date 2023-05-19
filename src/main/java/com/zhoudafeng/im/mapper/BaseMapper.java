@@ -40,8 +40,7 @@ public interface BaseMapper<T> {
      * @return
      */
     List getDataById(Integer IdKey);
-<<<<<<< HEAD
-=======
+
 
     /**
      * 分页查询
@@ -64,5 +63,4 @@ public interface BaseMapper<T> {
      * @return
      */
     Integer total(T t);
->>>>>>> 02e2df4 (BaseMapper扩展)
 }
