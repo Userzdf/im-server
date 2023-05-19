@@ -40,4 +40,29 @@ public interface BaseMapper<T> {
      * @return
      */
     List getDataById(Integer IdKey);
+<<<<<<< HEAD
+=======
+
+    /**
+     * 分页查询
+     * @param pageSize
+     * @param pageNumber
+     * @return
+     */
+    List<T> pagingQuery(Integer pageSize,Integer pageNumber);
+
+    /**
+     * 查询数据总数
+     * @return total
+     * @Param null
+     */
+    Integer total();
+
+    /**
+     * 带参数查询数据总数
+     * @param t
+     * @return
+     */
+    Integer total(T t);
+>>>>>>> 02e2df4 (BaseMapper扩展)
 }
