@@ -3,7 +3,8 @@ package com.zhoudafeng.im.mapper;
 import java.util.List;
 
 /***
- * 定义CRUD接口
+ * 定义CRUD接口,让所有mapper继承基本mapper
+ * 免去每个mapper层都产生大量重复代码,符合面向对象设计
  * @param <T>
  */
 public interface BaseMapper<T> {

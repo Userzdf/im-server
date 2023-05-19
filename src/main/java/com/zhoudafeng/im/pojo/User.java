@@ -1,7 +1,5 @@
 package com.zhoudafeng.im.pojo;
 
-import org.springframework.stereotype.Component;
-
 
 public class User {
     private String uId;
@@ -29,5 +27,9 @@ public class User {
                 "uId='" + uId + '\'' +
                 ", uName='" + uName + '\'' +
                 '}';
+    }
+
+    public static void initSystem(){
+        System.out.println("====>>>application初始化完成方法被执行");
     }
 }
