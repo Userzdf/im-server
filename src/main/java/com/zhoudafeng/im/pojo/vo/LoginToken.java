@@ -81,4 +81,17 @@ public class LoginToken {
     public void setExpireAt(Long expireAt) {
         this.expireAt = expireAt;
     }
+
+    @Override
+    public String toString() {
+        return "LoginToken{" +
+                "userId=" + userId +
+                ", nickName='" + nickName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", avatar='" + avatar + '\'' +
+                ", deviceId='" + deviceId + '\'' +
+                ", days=" + days +
+                ", expireAt=" + expireAt +
+                '}';
+    }
 }

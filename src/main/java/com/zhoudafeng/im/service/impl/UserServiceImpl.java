@@ -15,6 +15,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ApiResult register(EmailRegisterParam emailRegisterParam) {
-        return userMapper.save(emailRegisterParam);
+        Integer execute = userMapper.save(emailRegisterParam);
+        if(execute != 0){
+            return ApiResult.requestSuccess();
+        }
+        return ApiResult.requestFail();
     }
 }

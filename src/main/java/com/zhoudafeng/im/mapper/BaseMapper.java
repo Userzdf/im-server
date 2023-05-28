@@ -16,7 +16,7 @@ public interface BaseMapper<T> {
      * @param object
      * @return
      */
-    ApiResult<T> save(T object);
+    Integer save(T object);
 
     /**
      * 查询接口，返回一个泛型类list
